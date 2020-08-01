@@ -1,0 +1,119 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-config-prettier",
+    "tslint-react"
+  ],
+  "defaultSeverity": "error",
+  "linterOptions": {
+    "exclude": [
+      "**/*.js"
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-lines-between-class-members"
+  ],
+  "rules": {
+    "ordered-imports": false,
+    "member-ordering": false,
+    "member-access": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "trailing-comma": false,
+    "object-literal-sort-keys": false,
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "import-name": false,
+    "no-console": false,
+    "no-trailing-whitespace": false,
+    "no-string-literal": false,
+    "no-implicit-dependencies": [
+      true, 
+      [
+        "common",
+        "config",
+        "helpers",
+        "logging",
+        "modules",
+        "navigation",
+        "services",
+        "shared",
+        "store"
+      ]
+    ],
+    "no-submodule-imports": [
+      true,
+      "redux-saga/effects",
+      "@material-ui/core/styles",
+      "@material-ui/core/colors",
+      "filepond/dist/filepond.min.css",
+      "connected-react-router/immutable",
+      "lodash/fp",
+      "config",
+      "helpers",
+      "logging",
+      "modules",
+      "navigation",
+      "services",
+      "shared",
+      "store"
+    ],
+    "newline-before-return": true,
+    "curly": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "no-increment-decrement": false,
+    "object-shorthand-properties-first": false,
+    "radix": false,
+    "no-parameter-reassignment": true,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "space-within-parens": true,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "new-parens": true,
+    "max-line-length": [
+      true,
+      150
+    ],
+    "max-file-line-count": [
+      true,
+      300
+    ],
+    "lines-between-class-members": true,
+    "ter-newline-after-var": true,
+    "no-consecutive-blank-lines": true,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-finally",
+      "check-else",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "variable-name": {
+      "options": [
+        "allow-pascal-case"
+      ]
+    }
+  }
+}

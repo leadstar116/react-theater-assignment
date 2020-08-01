@@ -1,0 +1,42 @@
+.remo-theater{
+  margin-left: -378px;
+  margin-top: -300px;
+
+  .rt-app-bar {
+    text-align: right;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rt-rooms {
+    position: absolute;
+    z-index: 1;
+    .rt-room {
+      position: absolute;
+      cursor: pointer;
+
+      .rt-room-name {
+        font-size: 0.875rem;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      &:hover {
+        background: rgba($color: #000000, $alpha: 0.1);
+        border-radius: 4px;
+      }
+    }
+  }
+  .rt-background {
+    position: absolute;
+    img {
+      object-fit: cover;
+    }
+  }
+}
